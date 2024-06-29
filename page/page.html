@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<title>[enc/dec] rypt</title>
+<link rel="stylesheet" href="page.css">
+<script type="module" src="page.js"></script>
+
+<main>
+	<div>
+		<div class="label">パスワード</div>
+		<div>
+			<textarea id="el_password" rows="3"></textarea>
+		</div>
+	</div>
+	<div>
+		<div class="label">モード</div>
+		<div class="radios">
+			<label>
+				<input id="el_encrypt" type="radio" name="mode" checked>
+				Encrypt
+			</label>
+			<label>
+				<input id="el_decrypt" type="radio" name="mode">
+				Decrypt
+			</label>
+		</div>
+	</div>
+	<div>
+		<div class="label">データ</div>
+		<div class="grow">
+			<textarea id="el_data"></textarea>
+		</div>
+		<div class="btns">
+			<button id="el_ok">OK</button>
+		</div>
+	</div>
+	<div>
+		<div class="label">結果</div>
+		<div class="grow">
+			<textarea id="el_result" readonly></textarea>
+		</div>
+		<div class="btns">
+			<button id="el_save">保存</button>
+		</div>
+	</div>
+</main>
+<div id="el_dragover" hidden>ファイルをドロップ</div>
